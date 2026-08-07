@@ -11,11 +11,19 @@ for(i=0;i<len/2;i++){
 }
 
 }
+
 int main(){
-	char str[10]="sundhar";
+	char str[100];
+	printf("enter string:");
+	fgets(str,sizeof(str),stdin);
+	while(1){
 	reverse_string(str);
 
-	printf("%s",str);
+	printf("%s \n",str);
+	printf("enter new str:");
+
+	fgets(str,sizeof(str),stdin);
+	}
 }
 
 
