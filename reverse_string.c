@@ -18,8 +18,7 @@ int main(){
 	fgets(str,sizeof(str),stdin);
 	reverse_string(str);
 
-	printf("%s \n",str);
+	printf("%s",str);
 
 }
-
-
+ 
