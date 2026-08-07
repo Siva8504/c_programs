@@ -1,3 +1,8 @@
+//Program 3-Write a program that takes a string from the user and then prints it in reverse.
+//After showing the reverse, the program should again ask the user to enter another string and continue the same process. 
+//The string must be reversed without using any extra array.
+ 
+
 #include<stdio.h>
 #include<string.h>
 void reverse_string(char *ptr){
