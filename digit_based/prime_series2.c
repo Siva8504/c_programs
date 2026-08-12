@@ -1,3 +1,6 @@
+//print prime number series from 1 to hundred (use recursive function)
+
+
 #include<stdio.h>
 int isPrime(int num, int divisor)
 {
