@@ -1,51 +1,51 @@
 #include <stdio.h>
 
-void duplicate(int num[], int n)
+void duplicate(int arr[], int n)
 {
-    int i, j, k;
-    int count;
-    int found;
-    int rep[10];
-    int rep_count = 0;
 
-    for(i = 0; i < n - 1; i++)
-    {
-        found = 0;
-
-        /* Check if already printed */
-        for(k = 0; k < rep_count; k++)
-        {
-            if(num[i] == rep[k])
-            {
-                found = 1;
-                break;
-            }
-        }
-
-        if(found)
-            continue;
-
+	int repeated[n], rep_count = 0;
+        int i, j, k, count, found;
+	    for(i = 0; i < n; i++){
         count = 0;
 
-        /* Search for duplicates */
-        for(j = i + 1; j < n; j++)
+        for(j = 0; j < n; j++)
         {
-            if(num[i] == num[j])
+            if(arr[i] == arr[j])
             {
                 count++;
             }
         }
 
-        if(count > 0)
+        if(count > 1)
         {
-            printf("%d ", num[i]);
+            found = 0;
 
-            /* Store in rep[] */
-            rep[rep_count] = num[i];
-            rep_count++;
+            for(k = 0; k < rep_count; k++)
+            {
+                if(arr[i] == repeated[k])
+                {
+                    found = 1;
+                    break;
+                }
+            }
+
+            if(found == 0)
+            {
+                repeated[rep_count] = arr[i];
+                rep_count++;
+            }
         }
     }
+
+    printf("repeated elements:");
+
+    for(i = 0; i < rep_count; i++)
+    {
+        printf("%d ", repeated[i]);
+    }
 }
+
+    
 
 int main()
 {
