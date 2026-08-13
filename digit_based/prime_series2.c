@@ -21,25 +21,20 @@ int isPrime(int num, int divisor)
     }
 }
 int main(){
-	int n,result,num=1,divisor=2;
+	int n,result=0,num=1,divisor=2;
 	printf("enter n:");
 	scanf("%d",&n);
 	while(num<=n){
-		if(num<2){
-			printf("not prime");
-		}
 		if(num>=2){
+		
         result = isPrime(num,divisor);
-		}
 	
 	if ( result == 1){
 		printf("%d ",num);
 	}
+		}
 	num++;
 	}
-
-
-
 }
 
 
