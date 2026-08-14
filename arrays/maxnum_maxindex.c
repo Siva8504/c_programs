@@ -1,3 +1,6 @@
+//Print greatest number in an array and its index
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
