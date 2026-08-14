@@ -12,9 +12,6 @@ int clrbit_RHBtoLHB(int val){
 return val;
 }
 
-                      
-
-
 int main(){
 	int num;
 	printf("enter num:");
