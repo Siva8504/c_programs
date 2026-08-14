@@ -1,5 +1,4 @@
 #include<stdio.h>
-// 5 3 7 2 1 => if arr[i]>arr[i+1] => temp=arr[i] , arr[i]=arr[i+1],arr[i+1]=temp;
 void ascending(int arr[],int n){
 	int i,j,temp=0;
 	for(i=0;i<n-1;i++){
@@ -9,7 +8,6 @@ void ascending(int arr[],int n){
 					arr[i]=arr[j];
 					arr[j]=temp;
 					}
-
 			}
 	   }
 	   printf("print sorted array:");
