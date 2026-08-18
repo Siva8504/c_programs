@@ -17,7 +17,7 @@ for(i=0;i<len/2;i++){
 }
 
 if(flag == 1){
-	printf(" given text is palindrome");
+	printf(" given text is palindrome ");
 }
 else{
 	printf("not palindrome");
