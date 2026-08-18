@@ -15,7 +15,7 @@ void second_largest(int temp[],int n){
 		}
 	}
 
-	printf(" second highest temperature is : %d ", second);
+	printf(" second largest temperature value : %d ", second);
 }
 
 
