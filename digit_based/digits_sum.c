@@ -9,7 +9,7 @@ int main(){
 	printf("enter code:");
 	scanf("%d" , &code);
 
-	while(num){
+	while(code){
 
 		current_digit = code%10;
 		sum += current_digit;
